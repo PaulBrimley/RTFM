@@ -1,0 +1,20 @@
+<div style="text-align:center">
+	<h1>Sign Up:</h1>
+	<a ui-sref="login">Back to log in page</a><br/>
+	<div class="threadTop">
+		<form class="signIns" ng-submit="register(newUser)" name="newUserForm">
+			<table>
+				<tr>
+					<td class="rightJustify">Email:</td>
+					<td><input type="email" ng-model="newUser.email" placeholder="Input Email..." required></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rightJustify">Password:</td>
+					<td><input type="password" ng-model="newUser.password" placeholder="Input Password..." required></td>
+					<td><button ng-disabled="newUserForm.$invalid">Sign Up</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>

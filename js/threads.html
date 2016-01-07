@@ -1,5 +1,8 @@
 <div style="text-align:center">
     <h1>Threads</h1>
+    <div ng-hide="hider">Signed in as: {{username}}</div>
+    <a ng-show="hider" ui-sref="login">Login</a>
+    <a ng-hide="hider" ui-sref="logout">Logout</a>
     <div class="threadTop">
         <p>Create new thread:</p>
         <form name="newThreadForm">

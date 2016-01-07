@@ -10,7 +10,9 @@ html, body {
 }
 
 .threadTop {
-	margin: 1px 0;
+	width: 500px;
+	min-height: 30px;
+	margin: 1px auto;
 	padding: 5px;
 	text-align: center;
 	border: 1px solid blue;
@@ -20,4 +22,26 @@ html, body {
 .threadTop ul {
 	list-style-type: none;
 }
+
+.threadTop input {
+	width: 200px;
+	height: 20px;
+}
+
+.threadTop button {
+	width: 90px;
+	height: 20px;
+}
+
+.signIns {
+	display: flex;
+	justify-content: center;
+}
+
+.rightJustify {
+	text-align: right;
+}
+
+
+
 

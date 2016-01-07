@@ -1,13 +1,13 @@
 <div style="text-align:center">
-    <a ui-sref="threads">Back to main page</a>
-    <h1>{{ thread.title }} (by {{ thread.username }})</h1>
-    <div class="threadTop">
-    	
     
-	    <form name="newCommentForm">
-	    	User name: <br/><input type="text" ng-model="username" placeholder="Username..." required/><br/>
-	        New Comment: <br/><textarea type="text" ng-model="newCommentText" placeholder="Write a comment..." required rows="10" cols="30" ng-keyup="$event.keyCode === 13 && createComment(username, newCommentText)"></textarea><br/>
-	        <button ng-disabled="newCommentForm.$invalid" ng-click="createComment(username, newCommentText)">Add Comment</button>
+    <h1>{{ thread.title }} (by {{ thread.username }})</h1>
+    <a ui-sref="threads">Back to main page</a>
+    <a ui-sref="logout">Logout</a>
+    <div class="threadTop">
+	    <form name="newCommentForm" ng-submit="createComment(username, newCommentText)">
+	    	<p>Signed in as: {{username}}</p>
+	        New Comment: <br/><textarea type="text" ng-model="newCommentText" placeholder="Write a comment..." required rows="10" cols="30"></textarea><br/>
+	        <button ng-disabled="newCommentForm.$invalid">Comment</button>
 	    </form>
     </div>
     <div class="threadTop">
