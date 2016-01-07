@@ -1,0 +1,23 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.mainContainer {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.threadTop {
+	margin: 1px 0;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid blue;
+	border-radius: 5px;
+}
+
+.threadTop ul {
+	list-style-type: none;
+}
+
